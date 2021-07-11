@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/popup.css">
+    </head>
+    <body>
+        <p class="title">MemFocus</p>
+        <div class="entry">
+            <div class="description">Enabled</div>
+            <label class="toggle">
+                <input type="checkbox" id="enabled">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <hr>
+        <div class="entry">
+            <div class="description">Appear Frequency (seconds):</div>
+            <label>
+                <input type="number" class="number" id="frequency" value=30>
+            </label>
+        </div>
+        <div class="entry">
+            <div class="description">Stay Duration (seconds):</div>
+            <label>
+                <input type="number" class="number" id="duration" value="20">
+            </label>
+        </div>
+        <div class="entry">
+            <div class="description">Meme Size:</div>
+            <label>
+                <select name="size" id="size" value="medium">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </label>
+        </div>
+        <div class="entry">
+            <div class="description">Enabled Sites:</div>
+            <label>
+                <textarea id="sites" name="sites" rows="4" cols="10" placeholder="Enable MemFocus on..."></textarea>
+            </label>
+        </div>
+        <div id="status" class="description"></div>
+        <script type="text/javascript" src="js/popup.js"></script>
+    </body>
+</html>
